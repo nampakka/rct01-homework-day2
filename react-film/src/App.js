@@ -6,15 +6,24 @@ import './App.css';
 
 const { films } = TMDB;
 
-class App extends Component {
-  render() {
-    return (
-      <div className="film-library">
-        <FilmListing films={films} />
-        <FilmDetails films={films} />
-      </div>
-    );
-  }
+// class App extends Component {
+//   render() {
+//     return (
+//       <div className="film-library">
+//         <FilmListing films={films} />
+//         <FilmDetails films={films} />
+//       </div>
+//     );
+//   }
+// }
+
+const App = () => {
+  return (
+    <div className="film-library">
+      <FilmListing films={films} />
+      <FilmDetails films={films} />
+    </div>
+  );
 }
 
 export default App;
